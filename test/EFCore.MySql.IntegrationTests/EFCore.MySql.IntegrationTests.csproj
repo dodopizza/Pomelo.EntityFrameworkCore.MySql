@@ -23,6 +23,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(MicrosoftAspNetCoreIdentityEntityFrameworkCoreVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(MicrosoftAspNetCoreMvcNewtonsoftJsonVersion)" />
+    <PackageReference Include="MySqlConnector" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
   </ItemGroup>
 
@@ -32,10 +33,6 @@
 
   <ItemGroup Condition="'$(LocalEFCoreRepository)' == ''">
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="$(MicrosoftEntityFrameworkCoreDesignVersion)" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(LocalMySqlConnectorRepository)' == ''">
-    <PackageReference Include="MySqlConnector" Version="$(MySqlConnectorVersion)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(LocalPomeloJsonObjectRepository)' != ''">
